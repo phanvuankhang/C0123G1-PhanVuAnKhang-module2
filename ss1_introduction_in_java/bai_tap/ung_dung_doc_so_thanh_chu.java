@@ -34,11 +34,11 @@ public class ung_dung_doc_so_thanh_chu {
             case 8:
                 text = "Eight hundred";
                 break;
-            case 9:
+            default:
                 text = "Nine hundred";
         }
         if (number > 100) {
-            text = text+" ";
+            text = text + " ";
         }
         if (tens == 1) {
             switch (ones) {
@@ -69,7 +69,7 @@ public class ung_dung_doc_so_thanh_chu {
                 case 8:
                     text = text + "Eighteen";
                     break;
-                case 9:
+                default:
                     text = text + "Nineteen";
             }
         }
@@ -95,7 +95,7 @@ public class ung_dung_doc_so_thanh_chu {
             case 8:
                 text = text + "Eighty";
                 break;
-            case 9:
+            default:
                 text = text + "Ninety";
         }
         if (number > 100 && number < 110) {
@@ -134,7 +134,7 @@ public class ung_dung_doc_so_thanh_chu {
                 case 8:
                     text = text + "Eight";
                     break;
-                case 9:
+                default:
                     text = text + "Nine";
             }
         }
