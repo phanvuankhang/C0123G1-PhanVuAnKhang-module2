@@ -19,14 +19,15 @@ public class ThemPhanTuVaoMang {
             System.out.println("Không chèn được phần tử vào mảng.");
         } else {
             for (int i = 0; i < arr.length; i++) {
-                for (int j = arr.length - 1; j > i; j--) {
-                    if (index == i) {
+                if (index == i) {
+                    for (int j = arr.length - 1; j > i; j--) {
                         arr[j] = arr[j - 1];
                     }
+                    arr[index] = add;
+                    i++;
                 }
             }
         }
-        arr[index] = add;
         System.out.println(Arrays.toString(arr));
     }
 }
